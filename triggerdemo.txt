@@ -1,0 +1,7 @@
+create or replace Trigger tdemo  after insert on stud for each row
+
+begin
+	insert into backup values
+	(:New.name, :New.percentage);
+end;
+/

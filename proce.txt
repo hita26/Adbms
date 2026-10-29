@@ -1,0 +1,14 @@
+
+CREATE OR REPLACE FUNCTION prod(cno NUMBER)
+RETURN VARCHAR2
+IS
+    cname VARCHAR2(10);
+BEGIN
+    SELECT cid
+    INTO cname
+    FROM custinfo
+    WHERE cid = cno;
+
+    RETURN cname;
+END;
+/

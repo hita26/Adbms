@@ -1,0 +1,8 @@
+create or replace procedure p1(dno number)
+is
+Begin
+	for row in(select ename,eno from emp where deptno =dno)
+loop
+	dbms_output.put_line(row.eno|| row.ename);
+end loop;
+end;

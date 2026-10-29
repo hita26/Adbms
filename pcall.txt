@@ -1,0 +1,16 @@
+
+DECLARE
+
+  
+    cid number;
+
+BEGIN
+
+    enm := fun2(103);
+    
+    DBMS_OUTPUT.PUT_LINE('ur c id ' || cid);
+ 
+
+END;
+/
+/

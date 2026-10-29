@@ -1,0 +1,13 @@
+DECLARE
+
+    enm VARCHAR2(20);
+    dno number;
+
+BEGIN
+
+    enm := fun2(3);
+    
+    DBMS_OUTPUT.PUT_LINE('ur name is ' || enm);
+    DBMS_OUTPUT.PUT_LINE('ur departno is ' || dno);
+
+END;
